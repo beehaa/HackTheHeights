@@ -4,7 +4,7 @@ body
     width: 100%;
     height: 100%;
     margin: 0;
-
+    color: white;
     background-color: #fff;
 }
 
@@ -16,7 +16,27 @@ header
 
     background-color: #581517;
 }
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+td.colA { width: 20%; }
+td.colB { width: 60%; }
+td.colC { width: 20%; }
+th.colA { width: 20%; }
+th.colB { width: 60%; }
+th.colC { width: 20%; }
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
 #hack
 {
     display: table;
